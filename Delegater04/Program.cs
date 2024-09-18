@@ -5,7 +5,8 @@ namespace Delegater04
     internal class Program
     {
         //Skapa en statisk void metod med namnet ”SomeMethod” i klassen Program som tar en string-parameter och en
-        //delegatparameter av typen Func<bool>.
+        //delegatparameter av typen Func<bool>. Om den metod som delegatparametern tilldelats returnerar true ska
+        //metoden ”SomeMethod” skriva ut string-parametern med stora bokstäver annars med små bokstäver
 
         static void SomeMethod(string message, Func<bool> right)
         {
@@ -15,7 +16,6 @@ namespace Delegater04
             else
                 Console.WriteLine(message.ToLower());
         }
-
             static bool UpperCaseOrLowerCase()
             {
             Console.Write("Små eller stora bokstäver? svara JA eller NEJ:");
@@ -24,9 +24,6 @@ namespace Delegater04
                 return result;
             }
         
-
-
-
         static void Main(string[] args)
         {
             //Anropa metoden ”SomeMethod” i ”Main” metoden med ”lämpliga argument”.

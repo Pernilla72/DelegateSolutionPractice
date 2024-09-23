@@ -13,11 +13,11 @@ namespace Delegater03
         {
             if (first < second)
             {
-                Console.WriteLine($"Första värdet {first} är mindre än andra värdet {second}");
+                Console.WriteLine($"Första värdet {first} är mindre än andra värdet {second} ");
                 return true;
                 
             }
-            Console.WriteLine($"Första värdet är större än andra värdet");
+            Console.WriteLine($"Första värdet {first} är större än andra värdet {second} ");
             return false;
         }
 
@@ -29,7 +29,7 @@ namespace Delegater03
 
             Func<int,int, bool> less = IsLessThan;  //variabeln less har tilldelats metoden  IsLEssThan
             
-            less (10, 15);
+            less (20, 15);
             
             return;
         }
